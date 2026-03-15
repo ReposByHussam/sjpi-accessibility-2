@@ -89,11 +89,11 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
           </div>
 
       <!-- Use a <button> instead of a <div> to improve accessibility -->
-          <div class="category-filters">
-            <div class="filter-btn active">All</div>
-            <button class="filter-btn">Ceramic</button>
-            <div class="filter-btn">Glass</div>
-            <button class="filter-btn">Porcelain</button>
+          <div class="category-filters" aria-label="Filter products by category">
+            <button type ="button" class="filter-btn active" aria-pressed="true">All</button>
+            <button type="button" class="filter-btn"aria-pressed="false">Ceramic</button>
+            <button type="button" class="filter-btn" aria-pressed="false">Glass</button>
+            <button type="button" class="filter-btn" aria-pressed="false">Porcelain</button>
           </div>
 
           <!-- Broken urls on some pictures, what can we do to change this? -->
