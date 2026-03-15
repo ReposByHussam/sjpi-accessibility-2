@@ -42,22 +42,23 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 
   <body>
     <!-- Header/Navbar -->
+     <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="header">
       <div class="container">
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main navigation">
           <a href="#home" class="logo">Vase Vista</a>
           <!-- Navigation menu with duplicate IDs, inconsistent tabindex, and broken links to a 404 page -->
           <ul class="nav-links">
-            <li><a id="1" href="#home">Home</a></li>
-            <li><a id="1" tabindex="-1" href="#collection">Collection</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#collection">Collection</a></li>
             <li><a href="#philosophy">Philosophy</a></li>
-            <li><a tabindex="-1" href="404.html">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
  
-    <main>
+    <main id="main-content">
       <!-- Hero Section -->
       <section id="home" class="hero">
         <div class="container">
