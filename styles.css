@@ -3,10 +3,15 @@
     --color-cream: #f9f7f4;
     --color-beige: #f0ebe5;
     --color-sand: #e5ded4;
-    --color-terracotta: #c5a491;
+    --color-terracotta: #5a4332;
     --color-charcoal: #2d2d2d;
     --font-sans: 'Inter', sans-serif;
     --font-serif: 'Playfair Display', serif;
+    --muted: #334155;
+    --border: #94a3b8;
+    --accent: #0043ce;
+    --accent-hover: #002d9c;
+    --focus: #b45309;
   }
   
   * { 
@@ -44,15 +49,20 @@
     font-weight: 500;
     line-height: 1.2;
   }
-  
+
+  span{
+    color: var(--color-charcoal);
+  }
   a {
-    text-decoration: none;
-    color: inherit;
+    color: #0043ce;
+    display: inline-block;
+    padding: .5rem 0;
   }
   a:focus-visible, button:focus-visible, input:focus-visible{
     outline: 3px solid var(--color-charcoal);
     outline-offset: 2px;
   }
+ 
   .sr-only{
     position: absolute;
     width: 1px;
@@ -86,7 +96,7 @@
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--color-terracotta);
+    color: #5a4332;
     margin-bottom: 12px;
   }
   
@@ -134,7 +144,7 @@
     left: 0;
     right: 0;
     padding: 20px 0;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #ffffff;
     z-index: 100;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   }
@@ -342,6 +352,7 @@
     background-color: white;
     padding: 24px;
     max-width: 200px;
+    color: rgba(45, 45, 45, 0.8);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
   
@@ -538,7 +549,23 @@
   .footer-legal a:hover {
     color: white;
   }
-  
+  .eyebrow, .section-label, .kicker, .subtitle, .product-category{
+    color: #5a4332;
+  }
+
+  .hero-content p,.product-info p, .philosophy-paragraphs p, .contact-content > p, .stat p, .info-card p{
+    color: #374151
+  }
+  .footer-brand p, .footer-bottom p, .footer-legal a, .footer-column ul li a{
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .site-intro, .product-category, .product-info p, .footer p{
+    color: #1f2937;
+  }
+  .footer-column ul li a, .footer-legal a{
+    display: inline-block;
+    padding: 0.5rem 0;
+  }
   /* Responsive Design */
   @media (max-width: 992px) {
     .hero .container {
@@ -616,6 +643,27 @@
       gap: 24px;
     }
   }
+  .subtitle,
+.eyebrow,
+.section-label,
+.kicker,
+.product-category,
+.hero-content p,
+.product-info p,
+.quote-box p,
+.philosophy-paragraphs p,
+.contact-content > p,
+.stat p,
+.info-card p {
+  color: #374151 !important;
+}
+
+.footer-brand p,
+.footer-bottom p,
+.footer-legal a,
+.footer-column ul li a {
+  color: #ffffff !important;
+}
   @media (prefers-reduced-motion: reduce){
     html{
       scroll-behavior: auto;
